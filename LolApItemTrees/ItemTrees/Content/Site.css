@@ -1,0 +1,133 @@
+﻿/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.analysis-background {
+    text-align: center;
+    background: #000;
+}
+
+.analysis-textbox {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    text-align: left;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.attribute-tooltip{
+	color: #777;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: .65em;
+}
+
+.attribute-before-tooltip {
+	text-decoration: line-through;
+}
+
+.attribute-after-tooltip {
+    content: " : ";
+}
+
+.attribute-new {
+	background-color: #91A85F;
+	color: #eee;
+	border-radius: 4px;
+    text-shadow: none;
+}
+
+.medium-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.small-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.text-header {
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+td {
+    padding-right: 20px;
+}
+
+.align-center {
+    padding-right: 10px;
+    text-align: center;
+}
+
+[class^='select2-selection'] {
+  border-width: 0px !important;
+  background-color: transparent !important;
+  padding-left: 1px !important;
+  font-weight: bold;
+  font-size: 115%;
+  color: #ffffff !important;
+}
+
+[class^='select2']:hover {
+    border-width: 1px !important;
+}
+
+[class^='select2-results'] {
+    max-height: 400px !important;
+}
+
+.rg-box-tooltip {
+  padding: 7px;
+  background: none rgba(20, 20, 22, 0.96);
+  _filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F5141416, endColorstr=#F5141416);
+  border: 1.15px solid #686868;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  font-family: Arial, sans serif;
+  color: #ffffff;
+  text-align: left;
+  min-height: 46px;
+  z-index: 3000004;
+}
+
+.tooltip-inner {
+    max-width: 350px;
+    width: 350px;
+}
+
+.item-secondary{color:#e3842a;font-weight:bold}

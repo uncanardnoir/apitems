@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E30703B1-EF5C-4FFE-9595-596A79E13658}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ItemTrees</RootNamespace>
+    <AssemblyName>ItemTrees</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\3003.png" />
+    <Content Include="Icons\3004.png" />
+    <Content Include="Icons\3124.png" />
+    <Content Include="Images\511champsimilarities.png" />
+    <Content Include="Images\514champsimilarities.png" />
+    <Content Include="Images\allchampssimilarityscore.png" />
+    <Content Include="Images\allitempopularity.png" />
+    <Content Include="Images\banner.gif" />
+    <Content Include="Images\Itempercentchange.png" />
+    <Content Include="Images\nashortooth.png" />
+    <Content Include="Images\preview.png" />
+    <Content Include="Images\rylai.png" />
+    <Content Include="Images\similarity.gif" />
+    <Content Include="ItemTrees.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Icons\2045.png" />
+    <Content Include="Icons\3001.png" />
+    <Content Include="Icons\3023.png" />
+    <Content Include="Icons\3025.png" />
+    <Content Include="Icons\3027.png" />
+    <Content Include="Icons\3031.png" />
+    <Content Include="Icons\3032.png" />
+    <Content Include="Icons\3035.png" />
+    <Content Include="Icons\3040.png" />
+    <Content Include="Icons\3041.png" />
+    <Content Include="Icons\3048.png" />
+    <Content Include="Icons\3065.png" />
+    <Content Include="Icons\3068.png" />
+    <Content Include="Icons\3072.png" />
+    <Content Include="Icons\3075.png" />
+    <Content Include="Icons\3078.png" />
+    <Content Include="Icons\3083.png" />
+    <Content Include="Icons\3085.png" />
+    <Content Include="Icons\3087.png" />
+    <Content Include="Icons\3089.png" />
+    <Content Include="Icons\3091.png" />
+    <Content Include="Icons\3092.png" />
+    <Content Include="Icons\3100.png" />
+    <Content Include="Icons\3102.png" />
+    <Content Include="Icons\3110.png" />
+    <Content Include="Icons\3115.png" />
+    <Content Include="Icons\3116.png" />
+    <Content Include="Icons\3135.png" />
+    <Content Include="Icons\3143.png" />
+    <Content Include="Icons\3146.png" />
+    <Content Include="Icons\3151.png" />
+    <Content Include="Icons\3152.png" />
+    <Content Include="Icons\3153.png" />
+    <Content Include="Icons\3157.png" />
+    <Content Include="Icons\3165.png" />
+    <Content Include="Icons\3174.png" />
+    <Content Include="Icons\3190.png" />
+    <Content Include="Icons\3198.png" />
+    <Content Include="Icons\3285.png" />
+    <Content Include="Icons\3290.png" />
+    <Content Include="Icons\3508.png" />
+    <Content Include="Icons\3512.png" />
+    <Content Include="Icons\3708.png" />
+    <Content Include="Icons\3716.png" />
+    <Content Include="Icons\3720.png" />
+    <Content Include="Icons\3800.png" />
+    <Content Include="Icons\c1.png" />
+    <Content Include="Icons\c10.png" />
+    <Content Include="Icons\c101.png" />
+    <Content Include="Icons\c101b.jpg" />
+    <Content Include="Icons\c103.png" />
+    <Content Include="Icons\c103b.jpg" />
+    <Content Include="Icons\c105.png" />
+    <Content Include="Icons\c105b.jpg" />
+    <Content Include="Icons\c10b.jpg" />
+    <Content Include="Icons\c112.png" />
+    <Content Include="Icons\c112b.jpg" />
+    <Content Include="Icons\c115.png" />
+    <Content Include="Icons\c115b.jpg" />
+    <Content Include="Icons\c117.png" />
+    <Content Include="Icons\c117b.jpg" />
+    <Content Include="Icons\c127.png" />
+    <Content Include="Icons\c127b.jpg" />
+    <Content Include="Icons\c13.png" />
+    <Content Include="Icons\c131.png" />
+    <Content Include="Icons\c131b.jpg" />
+    <Content Include="Icons\c134.png" />
+    <Content Include="Icons\c134b.jpg" />
+    <Content Include="Icons\c13b.jpg" />
+    <Content Include="Icons\c143.png" />
+    <Content Include="Icons\c143b.jpg" />
+    <Content Include="Icons\c161.png" />
+    <Content Include="Icons\c161b.jpg" />
+    <Content Include="Icons\c1b.jpg" />
+    <Content Include="Icons\c245.png" />
+    <Content Include="Icons\c245b.jpg" />
+    <Content Include="Icons\c25.png" />
+    <Content Include="Icons\c25b.jpg" />
+    <Content Include="Icons\c26.png" />
+    <Content Include="Icons\c268.png" />
+    <Content Include="Icons\c268b.jpg" />
+    <Content Include="Icons\c26b.jpg" />
+    <Content Include="Icons\c3.png" />
+    <Content Include="Icons\c30.png" />
+    <Content Include="Icons\c30b.jpg" />
+    <Content Include="Icons\c31.png" />
+    <Content Include="Icons\c31b.jpg" />
+    <Content Include="Icons\c34.png" />
+    <Content Include="Icons\c34b.jpg" />
+    <Content Include="Icons\c38.png" />
+    <Content Include="Icons\c38b.jpg" />
+    <Content Include="Icons\c3b.jpg" />
+    <Content Include="Icons\c4.png" />
+    <Content Include="Icons\c43.png" />
+    <Content Include="Icons\c43b.jpg" />
+    <Content Include="Icons\c45.png" />
+    <Content Include="Icons\c45b.jpg" />
+    <Content Include="Icons\c4b.jpg" />
+    <Content Include="Icons\c50.png" />
+    <Content Include="Icons\c50b.jpg" />
+    <Content Include="Icons\c55.png" />
+    <Content Include="Icons\c55b.jpg" />
+    <Content Include="Icons\c60.png" />
+    <Content Include="Icons\c60b.jpg" />
+    <Content Include="Icons\c61.png" />
+    <Content Include="Icons\c61b.jpg" />
+    <Content Include="Icons\c63.png" />
+    <Content Include="Icons\c63b.jpg" />
+    <Content Include="Icons\c68.png" />
+    <Content Include="Icons\c68b.jpg" />
+    <Content Include="Icons\c69.png" />
+    <Content Include="Icons\c69b.jpg" />
+    <Content Include="Icons\c7.png" />
+    <Content Include="Icons\c74.png" />
+    <Content Include="Icons\c74b.jpg" />
+    <Content Include="Icons\c76.png" />
+    <Content Include="Icons\c76b.jpg" />
+    <Content Include="Icons\c79.png" />
+    <Content Include="Icons\c79b.jpg" />
+    <Content Include="Icons\c7b.jpg" />
+    <Content Include="Icons\c8.png" />
+    <Content Include="Icons\c81.png" />
+    <Content Include="Icons\c81b.jpg" />
+    <Content Include="Icons\c82.png" />
+    <Content Include="Icons\c82b.jpg" />
+    <Content Include="Icons\c84.png" />
+    <Content Include="Icons\c84b.jpg" />
+    <Content Include="Icons\c85.png" />
+    <Content Include="Icons\c85b.jpg" />
+    <Content Include="Icons\c8b.jpg" />
+    <Content Include="Icons\c9.png" />
+    <Content Include="Icons\c90.png" />
+    <Content Include="Icons\c90b.jpg" />
+    <Content Include="Icons\c96.png" />
+    <Content Include="Icons\c96b.jpg" />
+    <Content Include="Icons\c99.png" />
+    <Content Include="Icons\c999.png" />
+    <Content Include="Icons\c999b.jpg" />
+    <Content Include="Icons\c99b.jpg" />
+    <Content Include="Icons\c9b.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="JSON\output-5.11.json" />
+    <Content Include="JSON\output-5.14.json" />
+    <None Include="Properties\PublishProfiles\LoLItemTrees.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Raw Scripts\DrawTree-raw.js" />
+    <Content Include="Scripts\DrawTree.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Raw Scripts\LoadData-raw.js" />
+    <Content Include="Scripts\LoadData.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Utilities.js" />
+    <None Include="Raw Scripts\Utilities-raw.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\jit-yc.js" />
+    <Content Include="Scripts\jit.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="ItemTrees.aspx.cs">
+      <DependentUpon>ItemTrees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemTrees.aspx.designer.cs">
+      <DependentUpon>ItemTrees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11250</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11250/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
